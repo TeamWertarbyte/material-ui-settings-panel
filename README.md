@@ -14,7 +14,13 @@ npm i --save material-ui-settings-panel
 ## Usage
 
 ```js
-import { ExpandablePanel, HeaderPanel, SettingsGroup, SettingsItem, SettingsPanel } from 'material-ui-settings-panel'
+import { 
+  ExpandablePanel, 
+  HeaderPanel, 
+  SettingsGroup, 
+  SettingsItem, 
+  SettingsPanel
+} from 'material-ui-settings-panel'
 
 // ...
 
@@ -30,18 +36,21 @@ render() {
           />
           <ExpandablePanel
             title="Nutzer Einstellungen"
-            description="Namensformate festlegen; Nutzereinstellungen z. B. für Designs, Lesebestätigungen und E-Mail-Bevollmächtigung aktivieren"
+            description="Namensformate festlegen; Nutzereinstellungen z. B. für Designs, 
+            Lesebestätigungen und E-Mail-Bevollmächtigung aktivieren"
           >
             <SettingsGroup title="Lorem ipsum">
               <SettingsItem title="Lorem ipsum" description="Description">
                 <div>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                  sed diam nonumy eirmod tempor invidunt ut labore
                   et dolore magna aliquyam erat, sed diam voluptua.
                 </div>
               </SettingsItem>
               <SettingsItem title="Lorem ipsum">
                 <div>
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+                  sed diam nonumy eirmod tempor invidunt ut labore
                   et dolore magna aliquyam erat, sed diam voluptua.
                 </div>
               </SettingsItem>
@@ -100,7 +109,6 @@ render() {
 |description            | `string`  |             | Description for the panel.
 |style                  | `object`  |             | Override the inline-styles of the root component.
 |title*                 | `string`  |             | Title for the panel.
-
 
 \* required property
 
