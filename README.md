@@ -36,8 +36,7 @@ render() {
           />
           <ExpandablePanel
             title="Nutzer Einstellungen"
-            description="Namensformate festlegen; Nutzereinstellungen z. B. für Designs, 
-            Lesebestätigungen und E-Mail-Bevollmächtigung aktivieren"
+            description="Sed diam nonumy eirmod tempor invidunt ut labore"
           >
             <SettingsGroup title="Lorem ipsum">
               <SettingsItem title="Lorem ipsum" description="Description">
