@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import * as colors from 'material-ui/styles/colors'
+import Text from './Text'
 
 const styles = {
   root: {}
@@ -16,7 +17,9 @@ export default class SettingsGroup extends Component {
           padding: '10px 20px',
           backgroundColor: colors.grey200
         }}>
-          {this.props.title}
+          <Text type="body1">
+            {this.props.title}
+          </Text>
         </div>
         {this.props.children}
       </div>

@@ -6,7 +6,7 @@ import Text from './Text'
 
 const styles = {
   root: {
-    padding: '25px 50px',
+    padding: '25px 50px'
   },
   text: {
     display: 'flex',
@@ -19,7 +19,7 @@ class ExpandablePanel extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      expanded: true,
+      expanded: false,
       hovered: false
     }
   }
@@ -32,7 +32,7 @@ class ExpandablePanel extends Component {
     return (
       <Paper
         style={this.state.expanded ? {
-            margin: '40px -20px',
+            margin: '40px -20px'
           } : {
             ...styles.root,
             cursor: 'pointer',
@@ -59,7 +59,7 @@ class ExpandablePanel extends Component {
             ...styles.text,
             ...this.props.textStyle
           }}>
-            <Text type="body1" style={{ paddingBottom: 14 }}>
+            <Text type="body1">
               {this.props.title}
             </Text>
             <Text type="caption">
