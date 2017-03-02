@@ -3,6 +3,7 @@
 [![NPM](https://nodei.co/npm/material-ui-settings-panel.png?downloads=true&stars=true)](https://nodei.co/npm/material-ui-settings-panel/)
 
 A settings component in material ui style inspired by google admin console and google inbox. 
+See [the storybook](https://teamwertarbyte.github.io/material-ui-settings-panel) for an interactive demo.
 
 ![Demo](demo.gif)
 
