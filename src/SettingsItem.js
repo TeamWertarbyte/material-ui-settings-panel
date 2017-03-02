@@ -16,6 +16,7 @@ export default class SettingsItem extends Component {
       }}>
         <div style={{
           width: 175,
+          minWidth: 175,
           padding: '20px 10px 30px 20px',
           display: 'flex',
           flexDirection: 'column'
