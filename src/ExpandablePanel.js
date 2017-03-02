@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { IconButton, Paper } from 'material-ui'
-import { NavigationExpandLess } from 'material-ui/svg-icons'
 import * as colors from 'material-ui/styles/colors'
+import enhanceWithClickOutside from 'react-click-outside'
 import Text from './Text'
 
 const styles = {
@@ -15,13 +15,17 @@ const styles = {
   }
 }
 
-export default class ExpandablePanel extends Component {
+class ExpandablePanel extends Component {
   constructor(props) {
     super(props)
     this.state = {
       expanded: false,
       hovered: false
     }
+  }
+
+  handleClickOutside() {
+    this.setState({ expanded: false })
   }
 
   render() {
@@ -45,17 +49,9 @@ export default class ExpandablePanel extends Component {
           <div style={{
             padding: '25px 20px 25px 14px'
           }}>
-            <div style={{
-              display: 'flex',
-              alignItems: 'center'
-            }}>
-              <IconButton onTouchTap={() => this.setState({ expanded: false })}>
-                <NavigationExpandLess />
-              </IconButton>
-              <Text type="title">
-                {this.props.title}
-              </Text>
-            </div>
+            <Text type="title">
+              {this.props.title}
+            </Text>
             {this.props.children}
           </div>
           :
@@ -83,3 +79,5 @@ ExpandablePanel.propTypes = {
   textStyle: PropTypes.object,
   style: PropTypes.object
 }
+
+export default enhanceWithClickOutside(ExpandablePanel)
