@@ -57,7 +57,7 @@ export default class HeaderPanel extends Component {
 }
 
 HeaderPanel.propTypes = {
-  image: PropTypes.object,
+  image: PropTypes.node,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
   description: PropTypes.string,

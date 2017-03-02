@@ -19,7 +19,7 @@ class ExpandablePanel extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      expanded: false,
+      expanded: true,
       hovered: false
     }
   }
@@ -32,9 +32,7 @@ class ExpandablePanel extends Component {
     return (
       <Paper
         style={this.state.expanded ? {
-            ...styles.root,
             margin: '40px -20px',
-            ...this.props.style
           } : {
             ...styles.root,
             cursor: 'pointer',
@@ -46,12 +44,14 @@ class ExpandablePanel extends Component {
         onTouchTap={() => this.setState({ expanded: true })}
       >
         {this.state.expanded ?
-          <div style={{
-            padding: '25px 20px 25px 14px'
-          }}>
-            <Text type="title">
-              {this.props.title}
-            </Text>
+          <div>
+            <div style={{
+              padding: '16px 20px'
+            }}>
+              <Text type="title">
+                {this.props.title}
+              </Text>
+            </div>
             {this.props.children}
           </div>
           :

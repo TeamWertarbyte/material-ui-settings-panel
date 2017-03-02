@@ -1,6 +1,6 @@
 import React from 'react'
 import { action, storiesOf } from '@kadira/storybook'
-import { ExpandablePanel, HeaderPanel, SettingsPanel } from '../src'
+import { ExpandablePanel, HeaderPanel, SettingsGroup, SettingsPanel } from '../src'
 import { themed } from './storyUtil'
 
 storiesOf('SettingsPanel', module)
@@ -17,7 +17,8 @@ storiesOf('SettingsPanel', module)
         title="NutzerEinstellungen"
         description="Namensformate festlegen; Nutzereinstellungen z. B. für Designs, Lesebestätigungen und E-Mail-Bevollmächtigung aktivieren"
       >
-        Nutzereinstellungen Inhalt
+        <SettingsGroup title="Lorem ipsum">
+        </SettingsGroup>
       </ExpandablePanel>
       <ExpandablePanel
         title="E-Mail-Adressen"
