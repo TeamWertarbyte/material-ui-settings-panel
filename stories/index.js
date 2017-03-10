@@ -2,16 +2,17 @@ import React from 'react'
 import { action, storiesOf } from '@kadira/storybook'
 import { FlatButton } from 'material-ui'
 import { ExpandablePanel, HeaderPanel, SettingsGroup, SettingsItem, SettingsPanel } from '../src'
-import { themed } from './storyUtil'
+import { muiTheme } from 'storybook-addon-material-ui'
 
 storiesOf('SettingsPanel', module)
-  .add('Normal', () => themed(
+  .addDecorator(muiTheme())
+  .add('Normal', () => (
     <SettingsPanel>
       <HeaderPanel
         title="Gmail"
         subtitle="Für alle aktiviert"
         description="https://mail.google.com/a/company.com"
-        image={<img src="https://ssl.gstatic.com/apps/cpanel/resources/img/gmail-128.png" />}
+        image={<img src="https://ssl.gstatic.com/apps/cpanel/resources/img/gmail-128.png"/>}
       />
       <ExpandablePanel
         title="Nutzer Einstellungen"
@@ -23,7 +24,7 @@ storiesOf('SettingsPanel', module)
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
               et dolore magna aliquyam erat, sed diam voluptua.
             </div>
-            <FlatButton label="Change" />
+            <FlatButton label="Change"/>
           </SettingsItem>
           <SettingsItem title="Lorem ipsum">
             <div>
@@ -55,7 +56,7 @@ storiesOf('SettingsPanel', module)
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
               et dolore magna aliquyam erat, sed diam voluptua.
             </div>
-            <FlatButton label="Change" />
+            <FlatButton label="Change"/>
           </SettingsItem>
           <SettingsItem title="Lorem ipsum">
             <div>
@@ -87,7 +88,7 @@ storiesOf('SettingsPanel', module)
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
               et dolore magna aliquyam erat, sed diam voluptua.
             </div>
-            <FlatButton label="Change" />
+            <FlatButton label="Change"/>
           </SettingsItem>
           <SettingsItem title="Lorem ipsum">
             <div>
@@ -119,7 +120,7 @@ storiesOf('SettingsPanel', module)
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
               et dolore magna aliquyam erat, sed diam voluptua.
             </div>
-            <FlatButton label="Change" />
+            <FlatButton label="Change"/>
           </SettingsItem>
           <SettingsItem title="Lorem ipsum">
             <div>
