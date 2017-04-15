@@ -1,5 +1,6 @@
-# Material Settings Panel [![Build Status](https://travis-ci.org/TeamWertarbyte/material-ui-settings-panel.svg?branch=master)](https://travis-ci.org/TeamWertarbyte/material-ui-settings-panel)
+# Material Settings Panel
 
+[![Build Status](https://travis-ci.org/TeamWertarbyte/material-ui-settings-panel.svg?branch=master)](https://travis-ci.org/TeamWertarbyte/material-ui-settings-panel)
 [![Greenkeeper badge](https://badges.greenkeeper.io/TeamWertarbyte/material-ui-settings-panel.svg)](https://greenkeeper.io/)
 
 [![NPM](https://nodei.co/npm/material-ui-settings-panel.png?downloads=true&stars=true)](https://nodei.co/npm/material-ui-settings-panel/)
