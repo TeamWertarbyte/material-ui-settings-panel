@@ -41,7 +41,7 @@
     "storybook-addon-material-ui": "^0.7.7"
   },
   "peerDependencies": {
-    "material-ui": "^0.18.0",
+    "material-ui": ">=0.17.4 <1.0.0",
     "react": "^15.4.2",
     "react-click-outside": "^2.2.0"
   }
