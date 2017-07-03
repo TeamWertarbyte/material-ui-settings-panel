@@ -13,6 +13,7 @@ See [the storybook](https://teamwertarbyte.github.io/material-ui-settings-panel)
 ## Installation
 ```shell
 npm i --save material-ui-settings-panel
+npm i --save react-onclickoutside
 ```
 
 ## Usage
