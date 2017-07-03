@@ -1,7 +1,7 @@
 SettingsPanel example:
 ```
 const { ExpandablePanel, HeaderPanel, SettingsGroup, SettingsItem } = require('../..');
-const { FlatButton } = require('material-ui');
+const { FlatButton, SelectField, MenuItem } = require('material-ui');
 <SettingsPanel>
       <HeaderPanel
         title="Gmail"
@@ -19,6 +19,16 @@ const { FlatButton } = require('material-ui');
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
               et dolore magna aliquyam erat, sed diam voluptua.
             </div>
+                    <SelectField
+                      floatingLabelText="Frequency"
+                      value={1}
+                    >
+                      <MenuItem value={1} primaryText="Never" />
+                      <MenuItem value={2} primaryText="Every Night" />
+                      <MenuItem value={3} primaryText="Weeknights" />
+                      <MenuItem value={4} primaryText="Weekends" />
+                      <MenuItem value={5} primaryText="Weekly" />
+                    </SelectField>
             <FlatButton label="Change"/>
           </SettingsItem>
           <SettingsItem title="Lorem ipsum">

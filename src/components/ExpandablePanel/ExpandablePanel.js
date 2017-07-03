@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react'
 import { IconButton, Paper } from 'material-ui'
 import * as colors from 'material-ui/styles/colors'
-import enhanceWithClickOutside from 'react-click-outside'
+import onClickOutside from 'react-onclickoutside'
 import Text from '../SettingsPanel/Text'
 
 const styles = {
@@ -24,7 +24,8 @@ class ExpandablePanel extends Component {
     }
   }
 
-  handleClickOutside() {
+  handleClickOutside(evt) {
+    console.log(evt)
     this.setState({ expanded: false })
   }
 
@@ -80,4 +81,4 @@ ExpandablePanel.propTypes = {
   style: PropTypes.object
 }
 
-export default enhanceWithClickOutside(ExpandablePanel)
+export default onClickOutside(ExpandablePanel)
