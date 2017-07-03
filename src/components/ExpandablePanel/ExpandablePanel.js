@@ -26,7 +26,9 @@ class ExpandablePanel extends Component {
   }
 
   handleClickOutside (evt) {
-    this.setState({expanded: false})
+    if (this.state.expanded) {
+      this.setState({expanded: false})
+    }
   }
 
   render () {
