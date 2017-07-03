@@ -1,13 +1,8 @@
-import React from 'react'
-import { action, storiesOf } from '@kadira/storybook'
-import { FlatButton } from 'material-ui'
-import { ExpandablePanel, HeaderPanel, SettingsGroup, SettingsItem, SettingsPanel } from '../src'
-import { muiTheme } from 'storybook-addon-material-ui'
-
-storiesOf('SettingsPanel', module)
-  .addDecorator(muiTheme())
-  .add('Normal', () => (
-    <SettingsPanel>
+SettingsPanel example:
+```
+const { ExpandablePanel, HeaderPanel, SettingsGroup, SettingsItem } = require('../..');
+const { FlatButton } = require('material-ui');
+<SettingsPanel>
       <HeaderPanel
         title="Gmail"
         subtitle="Für alle aktiviert"
@@ -143,4 +138,4 @@ storiesOf('SettingsPanel', module)
         </SettingsGroup>
       </ExpandablePanel>
     </SettingsPanel>
-  ))
+```

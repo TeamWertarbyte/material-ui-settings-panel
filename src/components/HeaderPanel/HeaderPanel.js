@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import * as colors from 'material-ui/styles/colors'
-import Text from './Text'
+import Text from '../SettingsPanel/Text'
 
 const styles = {
   root: {

@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import Text from './Text'
+import Text from '../SettingsPanel/Text'
 
 const styles = {
   root: {
