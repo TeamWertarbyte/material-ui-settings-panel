@@ -3,15 +3,10 @@ import PropTypes from 'prop-types'
 import * as colors from 'material-ui/styles/colors'
 import Text from '../SettingsPanel/Text'
 
-const styles = {
-  root: {}
-}
-
 export default class SettingsGroup extends Component {
-  render() {
+  render () {
     return (
       <div style={{
-        ...styles.root,
         ...this.props.style
       }}>
         <div style={{

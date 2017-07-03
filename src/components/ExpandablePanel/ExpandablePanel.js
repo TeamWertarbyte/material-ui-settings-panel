@@ -17,7 +17,7 @@ const styles = {
 }
 
 class ExpandablePanel extends Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.state = {
       expanded: false,
@@ -25,39 +25,36 @@ class ExpandablePanel extends Component {
     }
   }
 
-  handleClickOutside(evt) {
-    console.log(evt)
-    this.setState({ expanded: false })
+  handleClickOutside (evt) {
+    this.setState({expanded: false})
   }
 
-  render() {
+  render () {
     return (
       <Paper
         style={this.state.expanded ? {
-            margin: '40px -20px'
-          } : {
-            ...styles.root,
-            cursor: 'pointer',
-            backgroundColor: this.state.hovered ? colors.grey200 : colors.white,
-            ...this.props.style
-          }}
-        onMouseEnter={() => this.setState({ hovered: true })}
-        onMouseLeave={() => this.setState({ hovered: false })}
-        onTouchTap={() => this.setState({ expanded: true })}
+          margin: '40px -20px'
+        } : {
+          ...styles.root,
+          cursor: 'pointer',
+          backgroundColor: this.state.hovered ? colors.grey200 : colors.white,
+          ...this.props.style
+        }}
+        onMouseEnter={() => this.setState({hovered: true})}
+        onMouseLeave={() => this.setState({hovered: false})}
+        onTouchTap={() => this.setState({expanded: true})}
       >
-        {this.state.expanded ?
-          <div>
-            <div style={{
-              padding: '16px 20px'
-            }}>
-              <Text type="title">
-                {this.props.title}
-              </Text>
-            </div>
-            {this.props.children}
-          </div>
-          :
+        {this.state.expanded ? <div>
           <div style={{
+            padding: '16px 20px'
+          }}>
+            <Text type="title">
+              {this.props.title}
+            </Text>
+          </div>
+          {this.props.children}
+        </div>
+          : <div style={{
             ...styles.text,
             ...this.props.textStyle
           }}>
@@ -73,7 +70,6 @@ class ExpandablePanel extends Component {
     )
   }
 }
-
 
 ExpandablePanel.propTypes = {
   title: PropTypes.string.isRequired,

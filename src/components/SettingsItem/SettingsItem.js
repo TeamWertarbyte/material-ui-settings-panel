@@ -9,7 +9,7 @@ const styles = {
 }
 
 export default class SettingsItem extends Component {
-  render() {
+  render () {
     return (
       <div style={{
         ...styles.root,
