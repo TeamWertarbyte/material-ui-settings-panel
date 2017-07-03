@@ -1,4 +1,5 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import * as colors from 'material-ui/styles/colors'
 import Text from '../SettingsPanel/Text'
 

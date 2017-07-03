@@ -1,5 +1,6 @@
-import React, { Component, PropTypes } from 'react'
-import { IconButton, Paper } from 'material-ui'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { Paper } from 'material-ui'
 import * as colors from 'material-ui/styles/colors'
 import onClickOutside from 'react-onclickoutside'
 import Text from '../SettingsPanel/Text'
