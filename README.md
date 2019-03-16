@@ -1,3 +1,7 @@
+**Deprecated** This project is now obsolete, you should use the [Expansion Panels](https://material-ui.com/demos/expansion-panels/) added in Material-UI 1.0 instead.
+
+---
+
 # Material Settings Panel
 
 [![Build Status](https://travis-ci.org/TeamWertarbyte/material-ui-settings-panel.svg?branch=master)](https://travis-ci.org/TeamWertarbyte/material-ui-settings-panel)
